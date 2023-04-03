@@ -1,0 +1,54 @@
+<launch>
+    <arg name="first_jackal"  default="j1"/>
+    <arg name="second_jackal"  default="j2"/>
+
+
+    <group ns = "$(arg first_jackal)">
+	  <arg name="use_map_topic" default="false"/>
+	  <arg name="scan_topic" default="$(eval optenv('JACKAL_LASER_TOPIC', 'scan'))" />
+
+	  <!-- Run the map server -->
+	 <arg name="map_file" default="$(find jackal_navigation)/maps/jackal_race.yaml"/>
+	 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+	  <!--- Run AMCL -->
+	  <include file="$(find jackal_navigation)/launch/include/amcl.launch">
+	    <arg name="use_map_topic" value="$(arg use_map_topic)" />
+	    <arg name="scan_topic"    value="$(arg scan_topic)" />
+	    <arg name="odom_frame" value="$(arg first_jackal)/odom"/>
+	    <arg name="base_frame"    value="$(arg first_jackal)/base_link"/>
+
+	  </include>
+
+	  <!--- Run Move Base -->
+	 <include file="$(find jackal_navigation)/launch/include/move_base.launch"> 
+	    <arg name="namsespace_args" value="$(arg first_jackal)" />
+	 </include>
+  
+  </group>
+
+
+  <!--group ns = "$(arg second_jackal)">
+	  <arg name="use_map_topic" default="false"/>
+	  <arg name="scan_topic" default="$(eval optenv('JACKAL_LASER_TOPIC', 'scan'))" />
+
+
+	 <arg name="map_file" default="$(find jackal_navigation)/maps/jackal_race.yaml"/>
+	 <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+
+	  <include file="$(find jackal_navigation)/launch/include/amcl.launch">
+	    <arg name="use_map_topic" value="$(arg use_map_topic)" />
+	    <arg name="scan_topic"    value="$(arg scan_topic)" />
+	    <arg name="odom_frame" value="$(arg second_jackal)/odom"/>
+	    <arg name="base_frame"    value="$(arg second_jackal)/base_link"/>
+
+	  </include>
+
+
+	 <include file="$(find jackal_navigation)/launch/include/move_base.launch"> 
+	    <arg name="namsespace_args" value="$(arg second_jackal)" />
+	 </include>
+  </group-->
+
+</launch>

@@ -1,0 +1,2 @@
+jackal_cartographer_navigation:jackal_navigation:jackal_simulator/jackal_gazebo:jackal_simulator/jackal_simulator:jackal_slam:mission_control:navigation_server:robot_localization:robot_msgs:robot_pose_publisher:start_jackal
+-DCATKIN_DEVEL_PREFIX=/home/cards/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cards/catkin_ws/install -G Unix Makefiles

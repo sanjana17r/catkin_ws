@@ -1,0 +1,20 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="slam_methods" default="cartographer" doc="slam type [gmapping, cartographer, cartographer_3d, hector, karto, frontier_exploration]"/>
+  <arg name="open_rviz" default="false"/>
+
+  <!-- SLAM: Gmapping, Cartographer, Hector, Karto, Frontier_exploration, RTAB-Map -->
+  <include file="$(find jackal_slam)/launch/jackal_$(arg slam_methods).launch">
+  </include>
+
+  <node pkg="map_server" type="map_saver" name="map_saver" output="screen"/>
+
+  <!--- Run Move Base -->
+  <!--include file="$(find jackal_navigation)/launch/include/move_base.launch" /-->
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find jackal_slam)/rviz/jackal_$(arg slam_methods).rviz"/>
+  </group>
+</launch>

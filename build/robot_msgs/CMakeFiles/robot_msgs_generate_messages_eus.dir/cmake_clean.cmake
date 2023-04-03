@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/manifest.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorAction.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorActionFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorActionGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorActionResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/ErrorResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/Feedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionAction.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionActionFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionActionGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionActionResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MissionResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveAction.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveActionFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveActionGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveActionResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/MoveResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/Task.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitAction.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitActionFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitActionGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitActionResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitFeedback.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitGoal.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/msg/WaitResult.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/srv/Location.l"
+  "/home/cards/catkin_ws/devel/share/roseus/ros/robot_msgs/srv/UserFeedback.l"
+  "CMakeFiles/robot_msgs_generate_messages_eus"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_eus.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

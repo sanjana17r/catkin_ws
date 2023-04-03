@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorAction.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorActionFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorActionGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorActionResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/ErrorResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/Feedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/Location.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionAction.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionActionFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionActionGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionActionResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MissionResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveAction.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveActionFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveActionGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveActionResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/MoveResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/Task.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/UserFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitAction.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitActionFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitActionGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitActionResult.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitFeedback.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitGoal.h"
+  "/home/cards/catkin_ws/devel/include/robot_msgs/WaitResult.h"
+  "CMakeFiles/robot_msgs_generate_messages_cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

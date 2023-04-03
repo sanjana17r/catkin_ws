@@ -1,0 +1,70 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find start_jackal)/urdf/environment_geometry.urdf.xacro'" />
+
+    <arg name="platform" default="$(optenv CPR_GAZEBO_PLATFORM jackal)" />
+    
+    <arg name="use_rviz"  default="true"/>
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+
+    <arg name="first_jackal"  default="j1"/>
+    <arg name="second_jackal"  default="j2"/>
+    
+  
+    <arg name="robot1_x" default="0.0"/>
+    <arg name="robot1_y" default="0.0"/>
+    <arg name="robot1_z" default="0.2"/>
+    <arg name="robot1_yaw" default="0.0" />
+
+    <arg name="robot2_x" default="1.0"/>
+    <arg name="robot2_y" default="1.0"/>
+    <arg name="robot2_z" default="0.2"/>
+    <arg name="robot2_yaw" default="0.0" />
+
+    <arg name="world_x" default="0.0"/>
+    <arg name="world_y" default="0.0"/>
+    <arg name="world_z" default="0.0"/>
+    <arg name="world_yaw" default="0.0"/>
+
+    <arg name="use_sim_time" default="true" />
+
+    <!--arg name="world_name" default="$(find cpr_office_gazebo)/worlds/actually_empty_world.world" /-->
+   <arg name="world_name" default="$(find jackal_gazebo)/worlds/jackal_race.world" />
+    
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="debug" value="0" />
+      <arg name="gui" value="$(arg gui)" />
+      <arg name="use_sim_time" value="$(arg use_sim_time)" />
+      <arg name="headless" value="$(arg headless)" />
+      <arg name="world_name" value="$(arg world_name)" />
+    </include>
+
+    <node name="world_spawner" pkg="gazebo_ros" type="spawn_model"
+      args="-urdf -model jackal -param robot_description -x $(arg world_x) -y $(arg world_y) -z $(arg world_z) -Y $(arg world_yaw)" />
+
+  <group ns = "$(arg first_jackal)">
+    <!--param name="tf_prefix" value="j2" /--> 
+    <include file="$(find jackal_gazebo)/launch/spawn_$(arg platform).launch">
+      <arg name="x" value="$(arg robot1_x)"/>
+      <arg name="y" value="$(arg robot1_y)"/>
+      <arg name="z" value="$(arg robot1_z)"/>
+      <arg name="yaw" value="$(arg robot1_yaw)"/>
+      <arg name="namsespace_arg" value="$(arg first_jackal)" />
+    </include>
+  </group>
+
+  <group ns = "$(arg second_jackal)">
+    <include file="$(find jackal_gazebo)/launch/spawn_$(arg platform).launch">
+      <arg name="x" value="$(arg robot2_x)"/>
+      <arg name="y" value="$(arg robot2_y)"/>
+      <arg name="z" value="$(arg robot2_z)"/>
+      <arg name="yaw" value="$(arg robot2_yaw)"/>
+      <arg name="namsespace_arg" value="$(arg second_jackal)" />
+    </include>
+  </group>
+
+
+<node pkg="rviz" type="rviz" name="rviz" required="true" args="-d $(find start_jackal)/rviz/multi_robot.rviz" if="$(eval arg('use_rviz') == true)"/>
+
+</launch>
+

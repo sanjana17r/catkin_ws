@@ -1,0 +1,8 @@
+prefix=/home/cards/catkin_ws/devel
+
+Name: start_jackal
+Description: Description of start_jackal
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

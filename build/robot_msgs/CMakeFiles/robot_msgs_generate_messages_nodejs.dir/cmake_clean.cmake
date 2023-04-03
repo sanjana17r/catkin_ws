@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorAction.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorActionFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorActionGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorActionResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/ErrorResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/Feedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionAction.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionActionFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionActionGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionActionResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MissionResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveAction.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveActionFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveActionGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveActionResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/MoveResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/Task.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitAction.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitActionFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitActionGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitActionResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitFeedback.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitGoal.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/msg/WaitResult.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/Location.js"
+  "/home/cards/catkin_ws/devel/share/gennodejs/ros/robot_msgs/srv/UserFeedback.js"
+  "CMakeFiles/robot_msgs_generate_messages_nodejs"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_nodejs.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

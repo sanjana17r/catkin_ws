@@ -1,0 +1,22 @@
+
+# IMPORTANT : DONT EDIT THE FOLLOWING INDEX
+
+navigation_index: MOVE
+waiting_index: WAIT
+
+
+
+
+# Topics
+
+robot_pose_topic: robot_pose
+e_stop_topic: e_stop
+pause_mission_topic: pause_mission
+
+
+# Frame
+
+global_frame: map  # Frame with reference to which goal is given
+# IMPORTANT: This should be same as global_frame in gps_map_converter.yaml
+# IMPORTANT: For indoor keep it map frame only
+

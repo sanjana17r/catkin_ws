@@ -1,0 +1,8 @@
+prefix=/home/cards/catkin_ws/devel
+
+Name: jackal_slam
+Description: Description of jackal_slam
+Version: 1.2.5
+Cflags: -I/home/cards/catkin_ws/src/jackal_slam/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/home/cards/catkin_ws/install
+
+Name: mission_control
+Description: Description of mission_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs nav_msgs robot_msgs roslib

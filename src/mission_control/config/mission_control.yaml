@@ -1,0 +1,5 @@
+plan_service: make_graph_plan
+path_topic: mission_controller/graph_plan
+goal_topic: goal_path
+controller_status: controller_status
+

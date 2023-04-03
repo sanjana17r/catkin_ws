@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorAction.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorActionFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorActionGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorActionResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_ErrorResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_Feedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionAction.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionActionFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionActionGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionActionResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MissionResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveAction.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveActionFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveActionGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveActionResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_MoveResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_Task.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitAction.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitActionFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitActionGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitActionResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitGoal.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/_WaitResult.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/msg/__init__.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/srv/_Location.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/srv/_UserFeedback.py"
+  "/home/cards/catkin_ws/devel/lib/python3/dist-packages/robot_msgs/srv/__init__.py"
+  "CMakeFiles/robot_msgs_generate_messages_py"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/robot_msgs_generate_messages_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
